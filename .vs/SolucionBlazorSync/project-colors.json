@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e3204ca3-a455-4df9-a86e-db1cb6d1016a": {
+      "ProjectGuid": "e3204ca3-a455-4df9-a86e-db1cb6d1016a",
+      "DisplayName": "WebBlazor",
+      "ColorIndex": 0
+    },
+    "dd3c28e2-c936-45be-a848-c0ee7d1b17bc": {
+      "ProjectGuid": "dd3c28e2-c936-45be-a848-c0ee7d1b17bc",
+      "DisplayName": "DLLConexion",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

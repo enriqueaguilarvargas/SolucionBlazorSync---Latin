@@ -1,0 +1,36 @@
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.deps.json
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.dll
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\ref\DLLConexion.dll
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.pdb
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.csprojAssemblyReference.cache
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfoInputs.cache
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfo.cs
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.csproj.CoreCompileInputs.cache
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.dll
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\ref\DLLConexion.dll
+C:\Users\Enrique\source\repos\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.pdb
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.deps.json
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\ref\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\bin\Debug\net5.0\DLLConexion.pdb
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.csproj.AssemblyReference.cache
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfoInputs.cache
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfo.cs
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.csproj.CoreCompileInputs.cache
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\ref\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync\DLLConexion\obj\Debug\net5.0\DLLConexion.pdb
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\bin\Debug\net5.0\DLLConexion.deps.json
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\bin\Debug\net5.0\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\bin\Debug\net5.0\ref\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\bin\Debug\net5.0\DLLConexion.pdb
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.csproj.AssemblyReference.cache
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfoInputs.cache
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.AssemblyInfo.cs
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.csproj.CoreCompileInputs.cache
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\ref\DLLConexion.dll
+D:\repos 10112021\SolucionBlazorSync - Latin\DLLConexion\obj\Debug\net5.0\DLLConexion.pdb

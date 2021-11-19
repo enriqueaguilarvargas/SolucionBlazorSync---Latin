@@ -1,0 +1,75 @@
+﻿@page "/"
+@using Syncfusion.Blazor.Maps;
+<style type="text/css">
+    body {
+        background: linear-gradient(to right, #005AA7, #FFFDE4);
+    }
+</style> 
+<h5 style="color:white"><p style="text-align:center;"> Bienvenido a una App Web sobre Blazor con Synfusion</p></h5>
+    <SfMaps Height="600px" Width="800px" Theme="Syncfusion.Blazor.Theme.TailwindDark">
+        <MapsZoomSettings Enable="true"></MapsZoomSettings>
+        <MapsBorder Color="green" Width="2"></MapsBorder>
+        <MapsMargin Bottom="10" Left="10" Right="10" Top="10"></MapsMargin>
+        <MapsTitleSettings Text="Casos Decesos y Montandad COVID">
+            <MapsTitleTextStyle Color="White"
+                                FontFamily="Times New Roman"
+                                FontStyle="italic"
+                                FontWeight="bold">
+
+            </MapsTitleTextStyle>
+        </MapsTitleSettings>
+        <MapsLegendSettings Visible="true"></MapsLegendSettings>
+        <MapsLayers>
+            <MapsLayer ShapeData='new {dataOptions="https://cdn.syncfusion.com/maps/map-data/world-map.json"}'
+                       ShapePropertyPath='new string[] {"name"}'
+                       DataSource="DetallePaises"
+                       ShapeDataPath="Nombre" TValue="Paises">
+                <MapsDataLabelSettings Visible="true" LabelPath="Nombre"
+                                       IntersectionAction="IntersectAction.Hide">
+                    <MapsLayerDataLabelBorder Color="White" Width="2"></MapsLayerDataLabelBorder>
+                    <MapsLayerDataLabelTextStyle Color="White" Size="10px"
+                                                 FontStyle="Sans-serif"
+                                                 FontWeight="normal">
+                    </MapsLayerDataLabelTextStyle>
+                </MapsDataLabelSettings>
+                <MapsShapeSettings Fill="#E5E5E5" ColorValuePath="Covid">
+                    <MapsShapeColorMappings>
+                        <MapsShapeColorMapping Value="Mayores Casos"
+                                               Color='new string[]{ "#A83279" }'></MapsShapeColorMapping>
+                        <MapsShapeColorMapping Value="Mayores Decesos"
+                                               Color='new string[]{ "#E74C3C" }'></MapsShapeColorMapping>
+                        <MapsShapeColorMapping Value="Menor Mortandad"
+                                               Color='new string[]{ "#12FFF7" }'></MapsShapeColorMapping>
+                    </MapsShapeColorMappings>
+                </MapsShapeSettings>
+                <MapsLayerTooltipSettings Visible="true"
+                                          ValuePath="Name"
+                                          Format="<b>${Nombre}</b><br><b>${Cantidad}</b>">
+                </MapsLayerTooltipSettings>
+            </MapsLayer>
+        </MapsLayers>
+    </SfMaps>
+
+    @code{
+        public List<Paises> DetallePaises = new List<Paises>
+    {
+        new Paises {Nombre="China", Covid="Mayores Casos", Cantidad="1150000"},
+        new Paises { Nombre= "United States", Covid= "Mayores Casos", Cantidad="1750000" },
+        new Paises { Nombre= "Russia", Covid= "Mayores Casos", Cantidad="755000"},
+        new Paises { Nombre= "Germany", Covid= "Mayores Casos", Cantidad="475000"},
+        new Paises { Nombre= "India", Covid= "Mayores Decesos", Cantidad="15550500"},
+        new Paises { Nombre= "Mexico", Covid= "Mayores Decesos", Cantidad="1250425"},
+        new Paises { Nombre= "Brazil", Covid= "Mayores Decesos", Cantidad="3575052"},
+        new Paises { Nombre= "Argentina", Covid= "Mayores Decesos", Cantidad="789525"},
+        new Paises { Nombre= "Canada", Covid= "Menor Mortandad", Cantidad="662000"},
+        new Paises { Nombre= "Israel", Covid= "Menor Mortandad", Cantidad="75025"},
+        new Paises { Nombre= "Sweden", Covid= "Menor Mortandad", Cantidad="57850"},
+        new Paises { Nombre= "Australia", Covid= "Menor Mortandad", Cantidad="22520"},
+    };
+        public class Paises
+        {
+            public string Nombre { get; set; }
+            public string Covid { get; set; }
+            public string Cantidad { get; set; }
+        }
+    }

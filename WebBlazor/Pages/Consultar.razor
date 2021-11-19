@@ -1,0 +1,71 @@
+﻿@page "/consultar"
+@using WebBlazor.Data;
+@using Syncfusion.Blazor.Charts;
+@using Syncfusion.Blazor.Grids;   
+<style type="text/css">
+    body {
+        background: linear-gradient(to right, #005AA7, #FFFDE4);
+    }
+</style>
+<div style="width:800px; height:500px;">
+    <SfChart Title="Contagios y Decesos COVID19">
+        <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category"
+                           Title="Contagios por Fecha">
+        </ChartPrimaryXAxis>
+        <ChartPrimaryYAxis>
+        </ChartPrimaryYAxis>
+        <ChartLegendSettings Visible="true"></ChartLegendSettings>
+        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+        <ChartSeriesCollection>
+            <ChartSeries Type="ChartSeriesType.Pareto"
+                         DataSource="@listado"
+                         XName="Fecha"
+                         YName="Contagios"
+                         Name="Casos">
+                <ChartMarker>
+                    <ChartDataLabel Visible="true"></ChartDataLabel>
+                </ChartMarker>
+            </ChartSeries>
+            <ChartSeries Type="ChartSeriesType.Column"
+                         DataSource="@listado"
+                         XName="Fecha"
+                         YName="Decesos"
+                         Name="Casos">
+                <ChartMarker>
+                    <ChartDataLabel Visible="true"></ChartDataLabel>
+                </ChartMarker>
+            </ChartSeries>
+        </ChartSeriesCollection>
+    </SfChart>
+</div>
+<div style="width:800px ; height:500px;">
+    <SfGrid DataSource="@listado"
+            AllowPaging="true"
+            AllowSorting="true"
+            AllowFiltering="true"
+            AllowGrouping="true">
+        <GridColumns>
+            <GridPageSettings PageSize="10"></GridPageSettings>
+            <GridColumn Field=@nameof(Datos.Fecha)
+                        HeaderText="Fecha"
+                        TextAlign="TextAlign.Center"
+                        Width="120"></GridColumn>
+            <GridColumn Field=@nameof(Datos.Contagios)
+                        HeaderText="Confirmados"
+                        TextAlign="TextAlign.Center"
+                        Width="120"></GridColumn>
+            <GridColumn Field=@nameof(Datos.Decesos)
+                        HeaderText="Decesos"
+                        TextAlign="TextAlign.Center"
+                        Width="120"></GridColumn>
+        </GridColumns>
+    </SfGrid>
+</div>
+@code {
+    List<DLLConexion.Datos> listado;
+    protected override void OnInitialized()
+    {
+        listado = new EnlacedeDatos().Consultar();
+        base.OnInitialized();
+    }
+}
